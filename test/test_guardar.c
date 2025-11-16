@@ -10,7 +10,7 @@ int main() {
     agregar_contacto(&a, contacto1);
     agregar_contacto(&a, contacto2);
 
-    guardar_agenda("data/test_guardar.txt", a);
+    guardar_contactos("data/test_guardar.txt", a);
 
     FILE *f = fopen("data/test_guardar.txt", "r");
     assert(f != NULL);

@@ -1,6 +1,8 @@
 // tests/test_agregar.c
 #include "../src/agenda.h"
 #include <assert.h>
+#include <stdio.h>
+#include <string.h>
 
 int main() {
     Agenda a;

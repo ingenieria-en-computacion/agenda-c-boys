@@ -5,7 +5,7 @@
 
 int main() {
     Agenda a;
-    inicializar_agenda(&a);
+    iniciar_agenda(&a);
     Contacto contacto1 = {"Ana", "Perez", 11, ENERO, "5555555555", CASA};
     Contacto contacto2 = {"Helena", "Rodriguez", 12, SEPTIEMBRE, "5555555556", MOVIL};
     Contacto contacto3 = {"Carlos", "Rodriguez", 12, SEPTIEMBRE, "5555555556", MOVIL};

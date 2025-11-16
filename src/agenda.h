@@ -4,16 +4,21 @@
 #define MAX_CONTACTOS 100
 
 enum TipoTelefono {CASA, MOVIL, OFICINA, OTRO};
-enum Mes{ENERO, FEBERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE};
+enum Mes{ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE};
 
 struct Persona{
     char nombre[30];
     // apellido
+    char apellido[30];
     // mes de nacimiento
+    enum Mes mes;
     // dia de nacimiento
+    int dia;
     // tipo contacto
     // numero de telefono
+    char telefono[10];
     // tipo de numero
+    enum TipoTelefono tipo;
 };
 
 typedef struct Persona Contacto;
@@ -33,7 +38,7 @@ void ordenar_contactos(Agenda *agenda);
 void ordenar_contactos_inv(Agenda *agenda);
 void mostrar_contacto(Contacto);
 void leer_contacto(Contacto *c);
-void cargar_contactos(char *filename);
-void guardar_contactos(char *filename);
+void cargar_contactos(char *filename, Agenda *agenda);
+void guardar_contactos(char *filename, Agenda agenda);
 
 #endif // __AGENDA_H_

@@ -13,7 +13,7 @@ int main() {
 
     // Redirigir stdout a un archivo temporal
     FILE *temp = freopen("data/test_imprimir.txt", "w", stdout);
-    imprimir_contactos(a);
+    imprimir_agenda(a);
     fclose(temp);
 
     FILE *f = fopen("data/test_imprimir.txt", "r");

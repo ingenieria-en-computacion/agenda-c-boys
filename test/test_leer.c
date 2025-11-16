@@ -11,7 +11,7 @@ int main() {
 
     Agenda a;
     iniciar_agenda(&a);
-    leer_agenda(&a, "data/test_leer.txt");
+    cargar_contactos("data/test_leer.txt", &a);
 
     assert(a.num_contactos == 2);
     assert(strcmp(a.contactos[0].nombre, "Ana") == 0);
